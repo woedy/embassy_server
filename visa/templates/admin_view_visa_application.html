@@ -1,0 +1,1135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Togolese Embassy - VISA</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Construction Html5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name=author content="Themefisher">
+    <meta name=generator content="Themefisher Constra HTML Template v1.0">
+
+    <!-- Favicon
+  ================================================== -->
+    <link rel="icon" type='{% static "image/png" href="images/favicon.png" %}'>
+
+    <!-- CSS
+  ================================================== -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href='{% static "assets/plugins/bootstrap/bootstrap.min.css" %}'>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href='{% static "assets/plugins/fontawesome/css/all.min.css" %}'>
+    <!-- Animation -->
+    <link rel="stylesheet" href='{% static "assets/plugins/animate-css/animate.css" %}'>
+    <!-- slick Carousel -->
+    <link rel="stylesheet" href='{% static "assets/plugins/slick/slick.css" %}'>
+    <link rel="stylesheet" href='{% static  "assets/plugins/slick/slick-theme.css" %}'>
+    <!-- Colorbox -->
+    <link rel="stylesheet" href='{% static "assets/plugins/colorbox/colorbox.css" %}'>
+    <!-- Template styles-->
+    <link rel="stylesheet" href='{% static "assets/css/style.css" %}'>
+
+</head>
+<body>
+<div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <ul class="top-info text-center text-md-left">
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            <p class="info-text">Fourth Circular Road - Accra Ghana</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--/ Top info end -->
+
+                <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a title="Facebook" href="https://facebbok.com/">
+                                <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                            <a title="Twitter" href="https://twitter.com">
+                                <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!--/ Top social end -->
+            </div>
+            <!--/ Content row end -->
+        </div>
+        <!--/ Container end -->
+    </div>
+    <!--/ Topbar end -->
+
+
+    <!-- Header start -->
+    <header id="header" class="header-one">
+        <div class="bg-white">
+            <div class="container">
+                <div class="logo-area">
+                    <div class="row align-items-center">
+                        <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                            <a class="d-block" href="index.html">
+                                <img loading="lazy" src='{% static "assets/images/logo.png" %}' alt="logo">
+
+
+                            </a>
+
+
+                        </div><!-- logo end -->
+
+
+                        <div class="col-lg-9 header-right">
+                            <ul class="top-info-box">
+
+                                <li>
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title">Call Us</p>
+                                            <p class="info-box-subtitle">030 277 7950</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title">Email Us</p>
+                                            <p class="info-box-subtitle">office@togolese.com</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="header-get-a-quote">
+                                    <a class="btn btn-primary" href="contact.html">Contact us</a>
+                                </li>
+                            </ul><!-- Ul end -->
+                        </div><!-- header right end -->
+                    </div><!-- logo area end -->
+
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div>
+
+        <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li class="nav-item"><a class="nav-link" href="{% url 'index_view' %}">Home</a></li>
+                      <li class="nav-item active "><a class="nav-link" href="{% url 'visa:visa_view' %}">Visa</a></li>
+
+
+                      <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Other Services <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Passport service</a></li>
+                            <li><a href="#">Lost Passport</a></li>
+                            <li><a href="#">Citizenship service</a></li>
+                            <li><a href="#">International Parental Child abduction</a></li>
+                            <li><a href="#">Arrest of a Togolese Citizen</a></li>
+                            <li><a href="#">Death of a Togolese Citizen</a></li>
+                            <li><a href="#">Victims of Crime</a></li>
+                            <li><a href="#">Legal Assistance</a></li>
+                            <li><a href="#">Voting</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">About Togo</a></li>
+                            <li><a href="#">The Ambassador</a></li>
+                            <li><a href="#">Information Center</a></li>
+                            <li><a href="#">Togo-Ghana Relationship</a></li>
+                            <li><a href="#">Covid-19</a></li>
+                          </ul>
+                      </li>
+
+
+                      <li class="nav-item"><a class="nav-link" href="#">News & Media</a></li>
+
+
+
+
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Invest in Togo</a></li>
+                          <li><a href="#">Travel to Togo</a></li>
+                          <li><a href="#">Information Center</a></li>
+
+
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+              </nav>
+          </div>
+          <!--/ Col end -->
+        </div>
+        <!--/ Row end -->
+
+        <div class="nav-search">
+          <span id="search"><i class="fa fa-search"></i></span>
+        </div><!-- Search end -->
+
+        <div class="search-block" style="display: none;">
+          <label for="search-field" class="w-100 mb-0">
+            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+          </label>
+          <span class="search-close">&times;</span>
+        </div><!-- Site search end -->
+    </div>
+    <!--/ Container end -->
+
+  </div>
+        <!--/ Navigation end -->
+    </header>
+    <!--/ Header end -->
+
+</div>
+
+
+<section id="main-container" class="main-container ">
+    <div class="container card pt-5 pb-5 pl-5 pr-5">
+
+        <div class="row text-center">
+            <div class="col-12">
+                <h3 class="section-sub-title mb-2">Togo Embassy Visa Application</h3>
+                <h4 class="mb-5">Application Details</h4>
+
+
+                <div class="container">
+
+                    <form id="contact-form" action="" method="POST" role="form">
+                    {% csrf_token %}
+                        <div class="row">
+
+                        <div class="col">
+                            <h4 style="color:blue;">Status: {{visa_application.status}}</h4>
+
+                        </div>
+                        <div class="col">
+                            <div class="form-group px-0">
+                                 <select name="status" class="form-select form-control" aria-label="Default select example" required>
+                                     {% if visa_application.status == 'Pending' %}
+                                        <option selected value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Declined">Declined</option>
+                                        <option value="Review">Review</option>
+                                        <option value="Completed">Completed</option>
+                                        <option value="Canceled">Canceled</option>
+                                     {% elif visa_application.status == 'Approved'%}
+                                        <option value="Pending">Pending</option>
+                                        <option selected value="Approved">Approved</option>
+                                        <option value="Declined">Declined</option>
+                                        <option value="Review">Review</option>
+                                        <option value="Completed">Completed</option>
+                                        <option value="Canceled">Canceled</option>
+                                     {% elif visa_application.status == 'Declined'%}
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option selected value="Declined">Declined</option>
+                                        <option value="Review">Review</option>
+                                        <option value="Completed">Completed</option>
+                                        <option value="Canceled">Canceled</option>
+                                     {% elif visa_application.status == 'Review'%}
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Declined">Declined</option>
+                                        <option selected value="Review">Review</option>
+                                        <option value="Completed">Completed</option>
+                                        <option value="Canceled">Canceled</option>
+                                     {% elif visa_application.status == 'Completed'%}
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Declined">Declined</option>
+                                        <option value="Review">Review</option>
+                                        <option selected value="Completed">Completed</option>
+                                        <option value="Canceled">Canceled</option>
+                                     {% elif visa_application.status == 'Canceled'%}
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Declined">Declined</option>
+                                        <option value="Review">Review</option>
+                                        <option value="Completed">Completed</option>
+                                        <option selected value="Canceled">Canceled</option>
+                                     {% endif %}
+                                </select>
+                         </div>
+                        </div>
+                        <div class="col">
+                            <div class="">
+                        <button class="btn btn-dark solid blank" type="submit">Save</button>
+                    </div>
+                        </div>
+
+                    </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!--/ Title row end -->
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    {% csrf_token %}
+                    <div class="step_1">
+                        <h6 class="column-title">Application Details</h6>
+                        <hr>
+                            <div class="row">
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Visa Type</h5>
+                                <p style="font-size: 18px;">{{visa_application.visa_type}}</p>
+                            </div>
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Passport Type</h5>
+                                <p style="font-size: 18px;">{{visa_application.passport_type}}</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Country Residence</h5>
+                                <p style="font-size: 18px;">{{visa_application.country_residence}}</p>
+                            </div>
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Visa Entry</h5>
+                                <p style="font-size: 18px;">{{visa_application.visa_entry}}</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Nationality</h5>
+                                <p style="font-size: 18px;">{{visa_application.nationality}}</p>
+                            </div>
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Nationality at Birth</h5>
+                                <p style="font-size: 18px;">{{visa_application.nationality_at_birth}}</p>
+                            </div>
+
+                                 <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Other Nationality</h5>
+                                <p style="font-size: 18px;">{{visa_application.other_nationality}}</p>
+                            </div>
+                            </div>
+                        <div class="row">
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Embassy Processing Office</h5>
+                                <p style="font-size: 18px;">{{visa_application.embassy_processing_office}}</p>
+                            </div>
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Service Type</h5>
+                                <p style="font-size: 18px;">{{visa_application.nationality_at_birth}}</p>
+                            </div>
+
+                            </div>
+                        <hr>
+                        <h6 class="column-title">Personal Info</h6>
+                        <hr>
+                        <div class="row">
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Title</h5>
+                                <p style="font-size: 18px;">{{personal_info.title}}</p>
+                            </div>
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Last Name</h5>
+                                <p style="font-size: 18px;">{{user.last_name}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">First Name</h5>
+                                <p style="font-size: 18px;">{{user.first_name}}</p>
+                            </div>
+                            </div>
+                        <div class="row">
+
+                                <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Other Names</h5>
+                                <p style="font-size: 18px;">{{personal_info.other_names}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Median Names</h5>
+                                <p style="font-size: 18px;">{{personal_info.median_names}}</p>
+                            </div>
+
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Gender</h5>
+                                <p style="font-size: 18px;">{{personal_info.gender}}</p>
+                            </div>
+
+
+                            </div>
+                        <div class="row">
+
+
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Marital Status</h5>
+                                <p style="font-size: 18px;">{{personal_info.marital_status}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Profession</h5>
+                                <p style="font-size: 18px;">{{personal_info.profession}}</p>
+                            </div>
+
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Date of Birth</h5>
+                                <p style="font-size: 18px;">{{personal_info.dob|date}}</p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="row">
+
+
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Place of Birth</h5>
+                                <p style="font-size: 18px;">{{personal_info.place_of_birth}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Phone Number</h5>
+                                <p style="font-size: 18px;">{{personal_info.phone_number}}</p>
+                            </div>
+
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Mode of Communication</h5>
+                                <p style="font-size: 18px;">{{personal_info.mode_of_communication}}</p>
+                            </div>
+
+
+
+                        </div>
+
+                          <hr>
+                        <h6 class="column-title">Travel Detail</h6>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Purpose of Travel</h5>
+                                <p style="font-size: 18px;">{{travel_detail.purpose_of_travel}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Date of last visit to country</h5>
+                                <p style="font-size: 18px;">{{travel_detail.last_visit_to_country_date|date}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Departure Date</h5>
+                                <p style="font-size: 18px;">{{travel_detail.departure_date|date}}</p>
+                            </div>
+
+                        </div>
+                         <div class="row">
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Stay Duration (Days)</h5>
+                                <p style="font-size: 18px;">{{travel_detail.stay_duration}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Do you have return ticket?</h5>
+
+                                {% if travel_detail.return_ticket == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+
+                            </div>
+
+
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Financial means at applicant's disposal?</h5>
+                                <p style="font-size: 18px;">{{travel_detail.financial_dispose}}</p>
+                            </div>
+
+                        </div>
+
+                         <hr>
+                        <h6 class="column-title">Travel History / Criminal History</h6>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Have you ever visited destinated country before?</h5>
+
+                                {% if travel_history.ever_visited_destination == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Have you ever been denied entry into destinated country?</h5>
+
+                                {% if travel_history.ever_been_denied_entry == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Have you ever been denied entry into destinated country?</h5>
+
+                                {% if travel_history.ever_been_denied_entry == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Have you ever been deported to / from destinated country?</h5>
+
+                                {% if travel_history.ever_been_deported == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Do you have a criminal record in destinated country or any other country?</h5>
+
+                                {% if travel_history.criminal_record_in_destined_or_other == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Do you suffer from a mental disorder?</h5>
+
+                                {% if travel_history.mental_disorder == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Do you suffer from any communicable diseases?</h5>
+
+                                {% if travel_history.communicable_disease == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+
+                            </div>
+                        </div>
+
+                         <hr>
+                        <h6 class="column-title">Passport Details</h6>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Passport Numbers</h5>
+                                <p style="font-size: 18px;">{{passport_detail.passport_no}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Place of Issue</h5>
+                                <p style="font-size: 18px;">{{passport_detail.place_of_issue}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Date of Issue</h5>
+                                <p style="font-size: 18px;">{{passport_detail.date_of_issue|date}}</p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Expiry of Issue</h5>
+                                <p style="font-size: 18px;">{{passport_detail.expiry_date|date}}</p>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <h6 class="column-title">Contact Information</h6>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Applicant Name</h5>
+                                <p style="font-size: 18px;">{{contact_info.application_name}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Residential address of current country</h5>
+                                <p style="font-size: 18px;">{{contact_info.residential_addr_cur_country}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Street name & building Or Apartment Number</h5>
+                                <p style="font-size: 18px;">{{contact_info.street_address}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Postal Address /P.O.Box</h5>
+                                <p style="font-size: 18px;">{{contact_info.postal_address}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">City/ Town</h5>
+                                <p style="font-size: 18px;">{{contact_info.city_town}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Country</h5>
+                                <p style="font-size: 18px;">{{contact_info.country}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">State / Region</h5>
+                                <p style="font-size: 18px;">{{contact_info.state_region}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Zip Code</h5>
+                                <p style="font-size: 18px;">{{contact_info.zip_code}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Telephone</h5>
+                                <p style="font-size: 18px;">{{contact_info.telephone}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Mobile</h5>
+                                <p style="font-size: 18px;">{{contact_info.mobile}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Email ID</h5>
+                                <p style="font-size: 18px;">{{contact_info.zip_code}}</p>
+                            </div>
+
+                        </div>
+
+                         <hr>
+                        <h6 class="column-title">Mailing Address</h6>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Select if the Address is same as Residential Address</h5>
+                                {% if mailing_address.same_as_residential == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Recipient Name</h5>
+                                <p style="font-size: 18px;">{{mailing_address.recipient_name}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Postal Address</h5>
+                                <p style="font-size: 18px;">{{mailing_address.postal_address}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Address 2</h5>
+                                <p style="font-size: 18px;">{{mailing_address.address_2}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">City/Town</h5>
+                                <p style="font-size: 18px;">{{mailing_address.city_town}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Country</h5>
+                                <p style="font-size: 18px;">{{mailing_address.country}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">State / Region</h5>
+                                <p style="font-size: 18px;">{{mailing_address.state_region}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Zip Code </h5>
+                                <p style="font-size: 18px;">{{mailing_address.zip_code}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Email</h5>
+                                <p style="font-size: 18px;">{{mailing_address.email}}</p>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <h6 class="column-title">Hotel / Business / Work/ School address in country</h6>
+                        <hr>
+
+                         <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Retirees must complete their last place of work details</h5>
+                                {% if mailing_address.retiree_complete == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Name</h5>
+                                <p style="font-size: 18px;">{{hotel_address.name}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Postal Address</h5>
+                                <p style="font-size: 18px;">{{hotel_address.postal_address}}</p>
+                            </div>
+
+                               <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Address 2</h5>
+                                <p style="font-size: 18px;">{{hotel_address.address_2}}</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">City/Town</h5>
+                                <p style="font-size: 18px;">{{hotel_address.city_town}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Country</h5>
+                                <p style="font-size: 18px;">{{hotel_address.country}}</p>
+                            </div>
+
+
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">State / Region</h5>
+                                <p style="font-size: 18px;">{{hotel_address.state_region}}</p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Zip Code</h5>
+                                <p style="font-size: 18px;">{{hotel_address.zip_code}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Email</h5>
+                                <p style="font-size: 18px;">{{hotel_address.email}}</p>
+                            </div>
+                        </div>
+
+                           <hr>
+                        <h6 class="column-title">Physical Address of Host / Hotel in Destined Country</h6>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Host Name</h5>
+                                <p style="font-size: 18px;">{{destined_country_address.host_name}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Street Name</h5>
+                                <p style="font-size: 18px;">{{destined_country_address.street_name}}</p>
+                            </div>
+
+                        </div>
+                         <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">City</h5>
+                                <p style="font-size: 18px;">{{destined_country_address.city}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Physical Address</h5>
+                                <p style="font-size: 18px;">{{destined_country_address.physical_address}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Telephone</h5>
+                                <p style="font-size: 18px;">{{destined_country_address.telephone}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Email</h5>
+                                <p style="font-size: 18px;">{{destined_country_address.email}}</p>
+                            </div>
+
+                        </div>
+
+
+
+                        <hr>
+                        <h6 class="column-title">Name & Address of Employer in Ghana</h6>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Name of Reference</h5>
+                                <p style="font-size: 18px;">{{employer_address.name_of_reference}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Address Line 1</h5>
+                                <p style="font-size: 18px;">{{employer_address.address_1}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Address Line 2</h5>
+                                <p style="font-size: 18px;">{{employer_address.address_2}}</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Name of Reference</h5>
+                                <p style="font-size: 18px;">{{employer_address.name_of_reference}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Address Line 1</h5>
+                                <p style="font-size: 18px;">{{employer_address.address_1}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Address Line 2</h5>
+                                <p style="font-size: 18px;">{{employer_address.address_2}}</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">City/Town</h5>
+                                <p style="font-size: 18px;">{{employer_address.city_town}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Country</h5>
+                                <p style="font-size: 18px;">{{employer_address.country}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">State / Region</h5>
+                                <p style="font-size: 18px;">{{employer_address.state_region}}</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">GPS/Digital Address</h5>
+                                <p style="font-size: 18px;">{{employer_address.digital_address}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Telephone</h5>
+                                <p style="font-size: 18px;">{{employer_address.telephone}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">TIN Number</h5>
+                                <p style="font-size: 18px;">{{employer_address.tin_no}}</p>
+                            </div>
+
+                        </div>
+
+
+                         <hr>
+                        <h6 class="column-title">Sponsor of Trip</h6>
+                        <hr>
+                         <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Tick if sponsor is the same as applicant</h5>
+                                {% if mailing_address.sponsor_as_applicant == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Organisation</h5>
+                                <p style="font-size: 18px;">{{sponsor_of_trip.organization}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Last Name</h5>
+                                <p style="font-size: 18px;">{{sponsor_of_trip.last_name}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">First Name</h5>
+                                <p style="font-size: 18px;">{{sponsor_of_trip.first_name}}</p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Other Names</h5>
+                                <p style="font-size: 18px;">{{sponsor_of_trip.other_names}}</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Phone</h5>
+                                <p style="font-size: 18px;">{{sponsor_of_trip.phone}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Address</h5>
+                                <p style="font-size: 18px;">{{sponsor_of_trip.address}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Country</h5>
+                                <p style="font-size: 18px;">{{sponsor_of_trip.country}}</p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Email</h5>
+                                <p style="font-size: 18px;">{{sponsor_of_trip.email}}</p>
+                            </div>
+
+                        </div>
+
+                        <hr>
+                        <h6 class="column-title">Application Completed by Another Person</h6>
+                        <hr>
+                         <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Tick if sponsor is the same as applicant</h5>
+                                {% if proxy_applicant.not_applicable == True %}
+                                    <p style="font-size: 18px;">Yes</p>
+                                {% else %}
+                                   <p style="font-size: 18px;">No</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Full Name</h5>
+                                <p style="font-size: 18px;">{{proxy_applicant.full_name}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Address</h5>
+                                <p style="font-size: 18px;">{{proxy_applicant.address}}</p>
+                            </div>
+
+                              <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Telephone</h5>
+                                <p style="font-size: 18px;">{{proxy_applicant.telephone}}</p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Phone</h5>
+                                <p style="font-size: 18px;">{{proxy_applicant.phone}}</p>
+                            </div>
+
+                        </div>
+
+
+                         <hr>
+                        <h6 class="column-title">Payment Information</h6>
+                        <hr>
+
+                         <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Payment Method</h5>
+                                <p style="font-size: 18px;">{{payment.payment_method}}</p>
+                            </div>
+                             <div class="col-md-4">
+                                <h5 style="color: gray;" class="visa_font_p">Amount</h5>
+                                <p style="font-size: 18px;">{{payment.amount}}</p>
+                            </div>
+
+            </div>
+
+
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                 <table class="table table-hover table-bordered table-striped table-inverse table-responsive">
+                        <thead class="thead-inverse table-dark">
+                            <tr>
+                                <th>Checklisted Items</th>
+
+
+                                <th>File</th>
+                                <th>Image</th>
+                            </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td>One recent passport-size photograph (<b>NB</b>: Taken within the last six months)</td>
+                                    <td><a>{{additional_document.passport_picture}}</a></td>
+                                    <td><img src="{{additional_document.passport_picture.url}}" width="120"/></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Evidence of payment of fees</td>
+                                   <td>{{additional_document.payment_evidence}}</td>
+                                    <td><img src="{{additional_document.payment_evidence.url}}" width="120"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Transfer certificate from last school attended</td>
+                                    <td>{{additional_document.transfer_certificate}}</td>
+                                     <td><img src="{{additional_document.transfer_certificate.url}}" width="120"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Proof that applicant will be supported while in Togo without taking up employment</td>
+                                    <td>{{additional_document.financial_proof}}</td>
+                                    <td><img src="{{additional_document.financial_proof.url}}" width="120"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Copies of Bio data pages of passport</td>
+                                    <td>{{additional_document.bio_data}}</td>
+                                    <td><img src="{{additional_document.bio_data.url}}" width="120"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Valid fully vaccinated Covid-19 certificate</td>
+                                    <td>{{additional_document.covid_cert}}</td>
+                                    <td><img src="{{additional_document.covid_cert.url}}" width="120"/></td>
+                                </tr>
+                            </tbody>
+                    </table>
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+
+        </div><!-- Content row -->
+    </div><!-- Conatiner end -->
+</section>
+
+
+<footer id="footer" class="footer ">
+    <div class="footer-main">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                    <h3 class="widget-title">About Us</h3>
+                    <img loading="lazy" width="200px" class="footer-logo"
+                         src='{% static "assets/images/footer-logo.png" %}' alt="Constra">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt
+                        ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="https://facebook.com" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://instagram.com" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div><!-- Footer social end -->
+                </div><!-- Col end -->
+
+                <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                    <h3 class="widget-title">Working Hours</h3>
+                    <div class="working-hours">
+                        We work 5 days a week, excluding major holidays. Contact us if you have an emergency, with our
+                        Hotline and Contact form.
+                        <br><br> Monday - Thursday: <span class="text-right">7:30 a.m. - 4:00 p.m.</span>
+                        <br><br> Friday: <span class="text-right">7:30 a.m. - 1:00 p.m.</span>
+
+                    </div>
+                </div><!-- Col end -->
+
+                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                    <h3 class="widget-title">Services</h3>
+                    <ul class="list-arrow">
+                        <li><a href="service-single.html">Home</a></li>
+                        <li><a href="service-single.html">Visa</a></li>
+                        <li><a href="service-single.html">Other Services</a></li>
+                        <li><a href="service-single.html">About</a></li>
+                        <li><a href="service-single.html">News & Media</a></li>
+                        <li><a href="service-single.html">Contact Us</a></li>
+                    </ul>
+                </div><!-- Col end -->
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div><!-- Footer main end -->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="copyright-info">
+              <span>Copyright &copy; <script>
+                  document.write(new Date().getFullYear())
+                </script>, Designed &amp; Developed by <a href="https://secdais.net/">Secdais Ghana Limited</a></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="footer-menu text-center text-md-right">
+                        <ul class="list-unstyled">
+                            <li><a href="about.html">Home</a></li>
+                            <li><a href="team.html">Visa</a></li>
+                            <li><a href="faq.html">Other Services</a></li>
+                            <li><a href="news-left-sidebar.html">About</a></li>
+                            <li><a href="pricing.html">News & Media</a></li>
+                            <li><a href="pricing.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- Row end -->
+
+            <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                <button class="btn btn-primary" title="Back to Top">
+                    <i class="fa fa-angle-double-up"></i>
+                </button>
+            </div>
+
+        </div><!-- Container end -->
+    </div><!-- Copyright end -->
+</footer><!-- Footer end -->
+
+
+<!-- Javascript Files
+================================================== -->
+
+<!-- initialize jQuery Library -->
+<script src='{% static "assets/plugins/jQuery/jquery.min.js" %}'></script>
+<!-- Bootstrap jQuery -->
+<script src='{% static "assets/plugins/bootstrap/bootstrap.min.js" %}' defer></script>
+<!-- Slick Carousel -->
+<script src='{% static "assets/plugins/slick/slick.min.js" %}'></script>
+<script src='{% static "assets/plugins/slick/slick-animation.min.js" %}'></script>
+<!-- Color box -->
+<script src='{% static "assets/plugins/colorbox/jquery.colorbox.js" %}'></script>
+<!-- shuffle -->
+<script src='{% static "assets/plugins/shuffle/shuffle.min.js" %}' defer></script>
+
+
+<!-- Google Map API Key-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+<!-- Google Map Plugin-->
+<script src='{% static "assets/plugins/google-map/map.js" %}' defer></script>
+
+<!-- Template custom -->
+<script src='{% static "assets/js/script.js" %}'></script>
+
+</div><!-- Body inner end -->
+</body>
+
+</html>

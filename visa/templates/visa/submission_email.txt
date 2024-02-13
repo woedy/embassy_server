@@ -1,0 +1,11 @@
+Dear {{ user.last_name }} {{ user.first_name }},
+
+You are seeing this email because you have successfully submitted
+your visa application to the Togo Embassy.
+
+We will review your application and get back to you as soon as we can.
+Please, always check your account on our portal or email to view your application status
+
+Thank you,
+
+Togo Embassy

@@ -1,0 +1,672 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding:5px
+}
+
+.title {
+    text-align: center;
+}
+
+.pd {
+padding: 15px;
+
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="title">
+    <h1 class="section-sub-title">Togo Embassy Visa Application</h1>
+    <h4 class="mb-5">Application Details</h4>
+
+</div>
+
+
+<section>
+    <div>
+        <table style="width:100%">
+
+            <tr>
+                <th>Visa Type</th>
+                <td>{{visa_application.visa_type}}</td>
+            </tr>
+            <tr>
+                <th>Passport Type</th>
+                <td>{{visa_application.passport_type}}</td>
+            </tr>
+            <tr>
+                <th>Country Residence</th>
+                <td>{{visa_application.country_residence}}</td>
+            </tr>
+             <tr>
+                <th>Visa Entry</th>
+                <td>{{visa_application.visa_entry}}</td>
+            </tr>
+
+             <tr>
+                <th>Nationality</th>
+                <td>{{visa_application.nationality}}</td>
+            </tr>
+
+            <tr>
+                <th>Nationality at Birth</th>
+                <td>{{visa_application.nationality_at_birth}}</td>
+            </tr>
+
+            <tr>
+                <th>Other Nationality</th>
+                <td>{{visa_application.other_nationality}}</td>
+            </tr>
+
+            <tr>
+                <th>Embassy Processing Office</th>
+                <td>{{visa_application.nationality_at_birth}}</td>
+            </tr>
+
+
+        </table>
+    </div>
+    <h4 class="pd">Personal Info</h4>
+    <div>
+        <table style="width:100%">
+
+            <tr>
+                <th>Title</th>
+                <td>{{personal_info.title}}</td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td>{{user.last_name}}</td>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <td>{{user.first_name}}</td>
+            </tr>
+             <tr>
+                <th>Other Names</th>
+                <td>{{personal_info.other_names}}</td>
+            </tr>
+
+             <tr>
+                <th>Median Names</th>
+                <td>{{personal_info.median_names}}</td>
+            </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td>{{personal_info.gender}}</td>
+            </tr>
+
+            <tr>
+                <th>Marital Status</th>
+                <td>{{personal_info.marital_status}}</td>
+            </tr>
+
+            <tr>
+                <th>Profession</th>
+                <td>{{personal_info.profession}}</td>
+            </tr>
+
+            <tr>
+                <th>Date of Birth</th>
+                <td>{{personal_info.dob|date}}</td>
+            </tr>
+
+             <tr>
+                <th>Place of Birth</th>
+                <td>{{personal_info.place_of_birth}}</td>
+            </tr>
+             <tr>
+                <th>Phone Number</th>
+                <td>{{personal_info.phone_number}}</td>
+            </tr>
+             <tr>
+                <th>Mode of Communication</th>
+                <td>{{personal_info.mode_of_communication}}</td>
+            </tr>
+
+
+        </table>
+    </div>
+
+    <h4 class="pd">Travel Detail</h4>
+    <div>
+        <table style="width:100%">
+
+            <tr>
+                <th>Purpose of Travel</th>
+                <td>{{travel_detail.purpose_of_travel}}</td>
+            </tr>
+            <tr>
+                <th>Date of last visit to country</th>
+                <td>{{travel_detail.last_visit_to_country_date|date}}</td>
+            </tr>
+
+            <tr>
+                <th>Departure Date</th>
+                <td>{{travel_detail.departure_date|date}}</td>
+            </tr>
+
+
+            <tr>
+                <th>Stay Duration (Days)</th>
+                <td>{{travel_detail.stay_duration}}</td>
+            </tr>
+
+
+             <tr>
+                <th>Stay Duration (Days)</th>
+                <td>{% if travel_detail.return_ticket == True %}
+                                Yes
+                                {% else %}
+                               No
+                                {% endif %}</td>
+            </tr>
+
+               <tr>
+                <th>Financial means at applicant's
+                                    disposal?</th>
+                <td>{{travel_detail.financial_dispose}}</td>
+            </tr>
+
+
+
+
+        </table>
+    </div>
+
+
+     <h4 class="pd">Travel History / Criminal History</h4>
+    <div>
+        <table style="width:100%">
+
+            <tr>
+                <th>Purpose of Travel</th>
+                <td> {% if travel_history.ever_visited_destination == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+            <tr>
+                <th>Have you ever been denied entry into
+                                    destinated country?</th>
+                <td> {% if travel_history.ever_been_denied_entry == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+            <tr>
+                <th>Have you ever been deported to / from
+                                    destinated country?</th>
+                <td> {% if travel_history.ever_been_deported == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+               <tr>
+                <th>Do you have a criminal record in destinated
+                                    country or any other country?</th>
+                <td> {% if travel_history.criminal_record_in_destined_or_other == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+             <tr>
+                <th>Do you suffer from a mental disorder?</th>
+                <td> {% if travel_history.mental_disorder == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+
+             <tr>
+                <th>Do you suffer from any communicable
+                                    diseases?</th>
+                <td> {% if travel_history.communicable_disease == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+
+
+
+
+
+        </table>
+    </div>
+
+      <h4 class="pd">Passport Details</h4>
+    <div>
+        <table style="width:100%">
+
+            <tr>
+                <th>Passport Numbers</th>
+                <td>{{passport_detail.passport_no}}</td>
+            </tr>
+
+             <tr>
+                <th>Place of Issue</th>
+                <td>{{passport_detail.place_of_issue}}</td>
+            </tr>
+
+
+
+            <tr>
+                <th>Date of Issue</th>
+                <td>{{passport_detail.date_of_issue|date}}</td>
+            </tr>
+
+             <tr>
+                <th>Expiry of Issue</th>
+                <td>{{passport_detail.expiry_date|date}}</td>
+            </tr>
+
+
+
+
+
+        </table>
+    </div>
+
+     <h4 class="pd">Contact Information</h4>
+    <div>
+        <table style="width:100%">
+
+            <tr>
+                <th>Applicant Name</th>
+                <td>{{contact_info.application_name}}</td>
+            </tr>
+
+             <tr>
+                <th>Residential address of current country</th>
+                <td>{{contact_info.residential_addr_cur_country}}</td>
+            </tr>
+             <tr>
+                <th>Postal Address /P.O.Box</th>
+                <td>{{contact_info.postal_address}}</td>
+            </tr>
+             <tr>
+                <th>City/ Town</th>
+                <td>{{contact_info.city_town}}</td>
+            </tr>
+
+            <tr>
+                <th>Country</th>
+                <td>{{contact_info.country}}</td>
+            </tr>
+            <tr>
+                <th>State / Region</th>
+                <td>{{contact_info.state_region}}</td>
+            </tr><tr>
+                <th>Zip Code</th>
+                <td>{{contact_info.zip_code}}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{contact_info.telephone}}</td>
+            </tr>
+            <tr>
+                <th>Mobile</th>
+                <td>{{contact_info.mobile}}</td>
+            </tr>
+            <tr>
+                <th>Email ID</th>
+                <td>{{contact_info.zip_code}}</td>
+            </tr>
+
+
+
+
+
+
+        </table>
+    </div>
+
+       <h4 class="pd">Mailing Address</h4>
+    <div>
+        <table style="width:100%">
+
+            <tr>
+                <th>Select if the Address is same as Residential Address</th>
+                <td>{% if mailing_address.same_as_residential == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+             <tr>
+                <th>Postal Address</th>
+                <td>{{mailing_address.postal_address}}</td>
+            </tr>
+
+            <tr>
+                <th>Address 2</th>
+                <td>{{mailing_address.address_2}}</td>
+            </tr>
+            <tr>
+                <th>City/Town</th>
+                <td>{{mailing_address.city_town}}</td>
+            </tr>
+
+            <tr>
+                <th>Country</th>
+                <td>{{mailing_address.country}}</td>
+            </tr>
+
+            <tr>
+                <th>State / Region</th>
+                <td>{{mailing_address.state_region}}</td>
+            </tr>
+
+
+             <tr>
+                <th>Zip Code</th>
+                <td>{{mailing_address.zip_code}}</td>
+            </tr>
+
+             <tr>
+                <th>Email</th>
+                <td>{{mailing_address.email}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <h4 class="pd">Hotel / Business / Work/ School address in country</h4>
+    <div>
+        <table style="width:100%">
+
+            <tr>
+                <th>Retirees must complete their last place of
+                                    work details</th>
+                <td>{% if hotel_address.retiree_complete == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+             <tr>
+                <th>Name</th>
+                <td>{{hotel_address.name}}</td>
+            </tr>
+
+
+            <tr>
+                <th>Postal Address</th>
+                <td>{{hotel_address.postal_address}}</td>
+            </tr>
+
+
+
+            <tr>
+                <th>Address 2</th>
+                <td>{{hotel_address.address_2}}</td>
+            </tr>
+
+
+            <tr>
+                <th>City/Town</th>
+                <td>{{hotel_address.city_town}}</td>
+            </tr>
+
+
+            <tr>
+                <th>Country</th>
+                <td>{{hotel_address.country}}</td>
+            </tr>
+
+
+            <tr>
+                <th>State / Region</th>
+                <td>{{hotel_address.state_region}}</td>
+            </tr>
+
+
+            <tr>
+                <th>Zip Code</th>
+                <td>{{hotel_address.zip_code}}</td>
+            </tr>
+
+
+            <tr>
+                <th>Email</th>
+                <td>{{hotel_address.email}}</td>
+            </tr>
+
+
+        </table>
+    </div>
+
+
+    <h4 class="pd">Physical Address of Host / Hotel in Destined Country</h4>
+    <div>
+        <table style="width:100%">
+
+
+
+             <tr>
+                <th>Host Name</th>
+                <td>{{destined_country_address.host_name}}</td>
+            </tr>
+
+
+              <tr>
+                <th>Street Name</th>
+                <td>{{destined_country_address.street_name}}</td>
+            </tr>
+
+               <tr>
+                <th>City</th>
+                <td>{{destined_country_address.city}}</td>
+            </tr>
+
+               <tr>
+                <th>Physical Address</th>
+                <td>{{destined_country_address.physical_address}}</td>
+            </tr>
+
+               <tr>
+                <th>Telephone</th>
+                <td>{{destined_country_address.telephone}}</td>
+            </tr>
+
+               <tr>
+                <th>Email</th>
+                <td>{{destined_country_address.email}}</td>
+            </tr>
+
+
+
+        </table>
+    </div>
+
+     <h4 class="pd">Name & Address of Employer in Ghana</h4>
+    <div>
+        <table style="width:100%">
+
+
+
+             <tr>
+                <th>Name of Reference</th>
+                <td>{{employer_address.name_of_reference}}</td>
+            </tr>
+
+             <tr>
+                <th>Address Line 1</th>
+                <td>{{employer_address.address_1}}</td>
+            </tr>
+
+
+             <tr>
+                <th>Address Line 2</th>
+                <td>{{employer_address.address_2}}</td>
+            </tr>
+
+
+             <tr>
+                <th>City/Town</th>
+                <td>{{employer_address.city_town}}</td>
+            </tr>
+
+             <tr>
+                <th>Country</th>
+                <td>{{employer_address.country}}</td>
+            </tr>
+
+             <tr>
+                <th>State / Region</th>
+                <td>{{employer_address.state_region}}</td>
+            </tr>
+
+             <tr>
+                <th>GPS/Digital Address</th>
+                <td>{{employer_address.digital_address}}</td>
+            </tr>
+
+             <tr>
+                <th>Telephone</th>
+                <td>{{employer_address.telephone}}</td>
+            </tr>
+
+             <tr>
+                <th>demo</th>
+                <td>{{employer_address.address_1}}</td>
+            </tr>
+
+             <tr>
+                <th>TIN Number</th>
+                <td>{{employer_address.tin_no}}</td>
+            </tr>
+
+        </table>
+    </div>
+
+     <h4 class="pd">Sponsor of Trip</h4>
+    <div>
+        <table style="width:100%">
+
+
+
+             <tr>
+                <th>Tick if sponsor is the same as applicant</th>
+                <td> {% if mailing_address.sponsor_as_applicant == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+             <tr>
+                <th>Organisation</th>
+                <td>{{sponsor_of_trip.organization}}</td>
+            </tr>
+
+            <tr>
+                <th>Last Name</th>
+                <td>{{sponsor_of_trip.last_name}}</td>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <td>{{sponsor_of_trip.first_name}}</td>
+            </tr>
+            <tr>
+                <th>Other Names</th>
+                <td>{{sponsor_of_trip.other_names}}</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{sponsor_of_trip.phone}}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>{{sponsor_of_trip.address}}</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>{{sponsor_of_trip.country}}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{sponsor_of_trip.email}}</td>
+            </tr>
+
+
+
+        </table>
+    </div>
+
+    <h4 class="pd">Application Completed by Another Person</h4>
+    <div>
+        <table style="width:100%">
+
+
+
+             <tr>
+                <th>Not Applicable</th>
+                <td> {% if proxy_applicant.not_applicable == True %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}</td>
+            </tr>
+
+             <tr>
+                <th>Full Name</th>
+                <td>{{proxy_applicant.full_name}}</td>
+            </tr>
+
+
+             <tr>
+                <th>Address</th>
+                <td>{{proxy_applicant.address}}</td>
+            </tr>
+
+            <tr>
+                <th>Telephone</th>
+                <td>{{proxy_applicant.telephone}}</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{proxy_applicant.phone}}</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+
+<div>
+    <br>
+    <p>This is a printable version of your visa application.</p>
+</div>
+
+
+</div><!-- Body inner end -->
+</body>
+
+</html>

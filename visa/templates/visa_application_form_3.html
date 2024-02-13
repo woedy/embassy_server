@@ -1,0 +1,873 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Togolese Embassy - VISA</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Construction Html5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name=author content="Themefisher">
+    <meta name=generator content="Themefisher Constra HTML Template v1.0">
+
+    <!-- Favicon
+  ================================================== -->
+    <link rel="icon" type='{% static "image/png" href="images/favicon.png" %}'>
+
+    <!-- CSS
+  ================================================== -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href='{% static "assets/plugins/bootstrap/bootstrap.min.css" %}'>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href='{% static "assets/plugins/fontawesome/css/all.min.css" %}'>
+    <!-- Animation -->
+    <link rel="stylesheet" href='{% static "assets/plugins/animate-css/animate.css" %}'>
+    <!-- slick Carousel -->
+    <link rel="stylesheet" href='{% static "assets/plugins/slick/slick.css" %}'>
+    <link rel="stylesheet" href='{% static  "assets/plugins/slick/slick-theme.css" %}'>
+    <!-- Colorbox -->
+    <link rel="stylesheet" href='{% static "assets/plugins/colorbox/colorbox.css" %}'>
+    <!-- Template styles-->
+    <link rel="stylesheet" href='{% static "assets/css/style.css" %}'>
+
+</head>
+<body>
+<div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <ul class="top-info text-center text-md-left">
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            <p class="info-text">Fourth Circular Road - Accra Ghana</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--/ Top info end -->
+
+                <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a title="Facebook" href="https://facebbok.com/">
+                                <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                            <a title="Twitter" href="https://twitter.com">
+                                <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!--/ Top social end -->
+            </div>
+            <!--/ Content row end -->
+        </div>
+        <!--/ Container end -->
+    </div>
+    <!--/ Topbar end -->
+
+
+    <!-- Header start -->
+    <header id="header" class="header-one">
+        <div class="bg-white">
+            <div class="container">
+                <div class="logo-area">
+                    <div class="row align-items-center">
+                        <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                            <a class="d-block" href="index.html">
+                                <img loading="lazy" src='{% static "assets/images/logo.png" %}' alt="logo">
+
+
+                            </a>
+
+
+                        </div><!-- logo end -->
+
+
+                        <div class="col-lg-9 header-right">
+                            <ul class="top-info-box">
+
+                                <li>
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title">Call Us</p>
+                                            <p class="info-box-subtitle">030 277 7950</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title">Email Us</p>
+                                            <p class="info-box-subtitle">office@togolese.com</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="header-get-a-quote">
+                                    <a class="btn btn-primary" href="contact.html">Contact us</a>
+                                </li>
+                            </ul><!-- Ul end -->
+                        </div><!-- header right end -->
+                    </div><!-- logo area end -->
+
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div>
+
+        <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li class="nav-item"><a class="nav-link" href="{% url 'index_view' %}">Home</a></li>
+                      <li class="nav-item active "><a class="nav-link" href="{% url 'visa:visa_view' %}">Visa</a></li>
+
+
+                      <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Other Services <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Passport service</a></li>
+                            <li><a href="#">Lost Passport</a></li>
+                            <li><a href="#">Citizenship service</a></li>
+                            <li><a href="#">International Parental Child abduction</a></li>
+                            <li><a href="#">Arrest of a Togolese Citizen</a></li>
+                            <li><a href="#">Death of a Togolese Citizen</a></li>
+                            <li><a href="#">Victims of Crime</a></li>
+                            <li><a href="#">Legal Assistance</a></li>
+                            <li><a href="#">Voting</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">About Togo</a></li>
+                            <li><a href="#">The Ambassador</a></li>
+                            <li><a href="#">Information Center</a></li>
+                            <li><a href="#">Togo-Ghana Relationship</a></li>
+                            <li><a href="#">Covid-19</a></li>
+                          </ul>
+                      </li>
+
+
+                      <li class="nav-item"><a class="nav-link" href="#">News & Media</a></li>
+
+
+
+
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Invest in Togo</a></li>
+                          <li><a href="#">Travel to Togo</a></li>
+                          <li><a href="#">Information Center</a></li>
+
+
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+              </nav>
+          </div>
+          <!--/ Col end -->
+        </div>
+        <!--/ Row end -->
+
+        <div class="nav-search">
+          <span id="search"><i class="fa fa-search"></i></span>
+        </div><!-- Search end -->
+
+        <div class="search-block" style="display: none;">
+          <label for="search-field" class="w-100 mb-0">
+            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+          </label>
+          <span class="search-close">&times;</span>
+        </div><!-- Site search end -->
+    </div>
+    <!--/ Container end -->
+
+  </div>
+        <!--/ Navigation end -->
+    </header>
+    <!--/ Header end -->
+
+</div>
+
+
+<section id="main-container" class="main-container">
+    <div class="container ">
+
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="section-title">Individual Visa Application</h2>
+                <h3 class="section-sub-title">Application form</h3>
+            </div>
+        </div>
+        <!--/ Title row end -->
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <form id="contact-form" action="" method="POST" role="form">
+                    {% csrf_token %}
+
+                    <div class="step_3 card pt-5 pb-5 pl-5 pr-5">
+
+                        <h3 class="column-title">Step Three</h3>
+                        <h6 class="column-title">Sponsor of Trip</h6>
+                        <hr>
+                        <div class="error-container"></div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label>Tick if sponsor is the same as applicant</label>
+                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="sponsor_as_applicant" id="sponsor_as_applicant">
+                                                <label class="form-check-label" for="sponsor_as_applicant">
+                                                        (Yes/No)
+                                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                     <div id="sponsor_as_applicant_div">
+                         <div class="row">
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Organisation</label>
+                                    <input class="form-control form-control-name" name="organization"
+                                           id="organization" placeholder="" type="text">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input class="form-control form-control-name" name="last_name_s"
+                                           id="last_name_s" placeholder="" type="text" >
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>First Name </label>
+                                      <input class="form-control form-control-name" name="first_name_s"
+                                           id="first_name_s" placeholder="" type="text">
+                                </div>
+                            </div>
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Other Names</label>
+                                    <input class="form-control form-control-name" name="other_names_s" id="other_names_s"
+                                           placeholder="" type="text" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Phone</label>
+                                    <input class="form-control form-control-name" name="phone_s"
+                                           id="phone_s" placeholder="" type="text">
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <input class="form-control form-control-name" name="address_s" id="address_s"
+                                           placeholder="" type="text" >
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Country </label>
+                                    <select name="country_s" id="country_s" class="form-select form-control"
+                                            aria-label="Default select example" required>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Aland Islands">Aland Islands</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Anguilla">Anguilla</option>
+                                        <option value="Antarctica">Antarctica</option>
+                                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Armenia">Armenia</option>
+                                        <option value="Aruba">Aruba</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Azerbaijan">Azerbaijan</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahrain">Bahrain</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Belize">Belize</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Bermuda">Bermuda</option>
+                                        <option value="Bhutan">Bhutan</option>
+                                        <option value="Bolivia">Bolivia</option>
+                                        <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                        <option value="Botswana">Botswana</option>
+                                        <option value="Bouvet Island">Bouvet Island</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                        <option value="Bulgaria">Bulgaria</option>
+                                        <option value="Burkina Faso">Burkina Faso</option>
+                                        <option value="Burundi">Burundi</option>
+                                        <option value="Cambodia">Cambodia</option>
+                                        <option value="Cameroon">Cameroon</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Cape Verde">Cape Verde</option>
+                                        <option value="Cayman Islands">Cayman Islands</option>
+                                        <option value="Central African Republic">Central African Republic</option>
+                                        <option value="Chad">Chad</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Christmas Island">Christmas Island</option>
+                                        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Comoros">Comoros</option>
+                                        <option value="Congo">Congo</option>
+                                        <option value="Congo, Democratic Republic of the Congo">Congo, Democratic Republic of the Congo</option>
+                                        <option value="Cook Islands">Cook Islands</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                                        <option value="Croatia">Croatia</option>
+                                        <option value="Cuba">Cuba</option>
+                                        <option value="Curacao">Curacao</option>
+                                        <option value="Cyprus">Cyprus</option>
+                                        <option value="Czech Republic">Czech Republic</option>
+                                        <option value="Denmark">Denmark</option>
+                                        <option value="Djibouti">Djibouti</option>
+                                        <option value="Dominica">Dominica</option>
+                                        <option value="Dominican Republic">Dominican Republic</option>
+                                        <option value="Ecuador">Ecuador</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="El Salvador">El Salvador</option>
+                                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                        <option value="Eritrea">Eritrea</option>
+                                        <option value="Estonia">Estonia</option>
+                                        <option value="Ethiopia">Ethiopia</option>
+                                        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                        <option value="Faroe Islands">Faroe Islands</option>
+                                        <option value="Fiji">Fiji</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="France">France</option>
+                                        <option value="French Guiana">French Guiana</option>
+                                        <option value="French Polynesia">French Polynesia</option>
+                                        <option value="French Southern Territories">French Southern Territories</option>
+                                        <option value="Gabon">Gabon</option>
+                                        <option value="Gambia">Gambia</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="Ghana">Ghana</option>
+                                        <option value="Gibraltar">Gibraltar</option>
+                                        <option value="Greece">Greece</option>
+                                        <option value="Greenland">Greenland</option>
+                                        <option value="Grenada">Grenada</option>
+                                        <option value="Guadeloupe">Guadeloupe</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Guatemala">Guatemala</option>
+                                        <option value="Guernsey">Guernsey</option>
+                                        <option value="Guinea">Guinea</option>
+                                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                        <option value="Guyana">Guyana</option>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                        <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="Hong Kong">Hong Kong</option>
+                                        <option value="Hungary">Hungary</option>
+                                        <option value="Iceland">Iceland</option>
+                                        <option value="India">India</option>
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                        <option value="Iraq">Iraq</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Isle of Man">Isle of Man</option>
+                                        <option value="Israel">Israel</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Jamaica">Jamaica</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Jersey">Jersey</option>
+                                        <option value="Jordan">Jordan</option>
+                                        <option value="Kazakhstan">Kazakhstan</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Kiribati">Kiribati</option>
+                                        <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                                        <option value="Korea, Republic of">Korea, Republic of</option>
+                                        <option value="Kosovo">Kosovo</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                        <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Lebanon">Lebanon</option>
+                                        <option value="Lesotho">Lesotho</option>
+                                        <option value="Liberia">Liberia</option>
+                                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lithuania">Lithuania</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Macao">Macao</option>
+                                        <option value="Macedonia, the Former Yugoslav Republic of">Macedonia, the Former Yugoslav Republic of</option>
+                                        <option value="Madagascar">Madagascar</option>
+                                        <option value="Malawi">Malawi</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Maldives">Maldives</option>
+                                        <option value="Mali">Mali</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Marshall Islands">Marshall Islands</option>
+                                        <option value="Martinique">Martinique</option>
+                                        <option value="Mauritania">Mauritania</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="Mayotte">Mayotte</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                        <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                        <option value="Monaco">Monaco</option>
+                                        <option value="Mongolia">Mongolia</option>
+                                        <option value="Montenegro">Montenegro</option>
+                                        <option value="Montserrat">Montserrat</option>
+                                        <option value="Morocco">Morocco</option>
+                                        <option value="Mozambique">Mozambique</option>
+                                        <option value="Myanmar">Myanmar</option>
+                                        <option value="Namibia">Namibia</option>
+                                        <option value="Nauru">Nauru</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                        <option value="New Caledonia">New Caledonia</option>
+                                        <option value="New Zealand">New Zealand</option>
+                                        <option value="Nicaragua">Nicaragua</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Niue">Niue</option>
+                                        <option value="Norfolk Island">Norfolk Island</option>
+                                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Oman">Oman</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="Palau">Palau</option>
+                                        <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                        <option value="Panama">Panama</option>
+                                        <option value="Papua New Guinea">Papua New Guinea</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Philippines">Philippines</option>
+                                        <option value="Pitcairn">Pitcairn</option>
+                                        <option value="Poland">Poland</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Puerto Rico">Puerto Rico</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Reunion">Reunion</option>
+                                        <option value="Romania">Romania</option>
+                                        <option value="Russian Federation">Russian Federation</option>
+                                        <option value="Rwanda">Rwanda</option>
+                                        <option value="Saint Barthelemy">Saint Barthelemy</option>
+                                        <option value="Saint Helena">Saint Helena</option>
+                                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                        <option value="Saint Lucia">Saint Lucia</option>
+                                        <option value="Saint Martin">Saint Martin</option>
+                                        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                        <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                                        <option value="Samoa">Samoa</option>
+                                        <option value="San Marino">San Marino</option>
+                                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                        <option value="Saudi Arabia">Saudi Arabia</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Serbia">Serbia</option>
+                                        <option value="Serbia and Montenegro">Serbia and Montenegro</option>
+                                        <option value="Seychelles">Seychelles</option>
+                                        <option value="Sierra Leone">Sierra Leone</option>
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Sint Maarten">Sint Maarten</option>
+                                        <option value="Slovakia">Slovakia</option>
+                                        <option value="Slovenia">Slovenia</option>
+                                        <option value="Solomon Islands">Solomon Islands</option>
+                                        <option value="Somalia">Somalia</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+                                        <option value="South Sudan">South Sudan</option>
+                                        <option value="Spain">Spain</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="Sudan">Sudan</option>
+                                        <option value="Suriname">Suriname</option>
+                                        <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                        <option value="Swaziland">Swaziland</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Switzerland">Switzerland</option>
+                                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                        <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                                        <option value="Tajikistan">Tajikistan</option>
+                                        <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                        <option value="Thailand">Thailand</option>
+                                        <option value="Timor-Leste">Timor-Leste</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Tokelau">Tokelau</option>
+                                        <option value="Tonga">Tonga</option>
+                                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                        <option value="Tunisia">Tunisia</option>
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Turkmenistan">Turkmenistan</option>
+                                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                        <option value="Tuvalu">Tuvalu</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Arab Emirates">United Arab Emirates</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States">United States</option>
+                                        <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Uzbekistan">Uzbekistan</option>
+                                        <option value="Vanuatu">Vanuatu</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Viet Nam">Viet Nam</option>
+                                        <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                        <option value="Virgin Islands, U.s.">Virgin Islands, U.s.</option>
+                                        <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                        <option value="Western Sahara">Western Sahara</option>
+                                        <option value="Yemen">Yemen</option>
+                                        <option value="Zambia">Zambia</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input class="form-control form-control-name" name="email_s"
+                                           id="email_s" placeholder="" type="text" >
+
+                                </div>
+                            </div>
+
+                        </div>
+                     </div>
+                        <hr>
+
+                         <h6 class="column-title">Application Completed by Another Person</h6>
+                        <hr>
+                        <div class="error-container"></div>
+                        <p class="not_applicable_p_div">For Persons completing this form on behalf of Applicants who cannot read or write English The above declaration has been read and interpreted by me in the   <span style="width: 200px; display: inline-block;">
+                                    <input class="form-control form-control-name" name="language"
+                                           id="language" placeholder="Please enter language" type="text" >
+                        </span>  Language to the applicant and he/she approves of it.</p>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label>Not Applicable</label>
+                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="not_applicable_p" id="not_applicable_p">
+                                                <label class="form-check-label" for="not_applicable_p">
+                                                        (Yes/No)
+                                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="not_applicable_p_div">
+                            <div class="row">
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input class="form-control form-control-name" name="full_name_p"
+                                           id="full_name_p" placeholder="" type="text">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <input class="form-control form-control-name" name="address_p"
+                                           id="address_p" placeholder="" type="text">
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Telephone </label>
+                                      <input class="form-control form-control-name" name="telephone_p"
+                                           id="telephone_p" placeholder="" type="text">
+                                </div>
+                            </div>
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Phone</label>
+                                    <input class="form-control form-control-name" name="phone_p" id="phone_p"
+                                           placeholder="" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <hr>
+
+                          <h6 class="column-title">Required Document Checklist (Document to be submitted with application)</h6>
+                        <hr>
+                         <div class="form-group">
+                                    <div class="form-check">
+                                                        <input required class="form-check-input" type="checkbox" name="post1" id="post1">
+                                                <label class="form-check-label" for="post1">
+                                                        * Duly completed Application Form
+                                                    </label>
+                                    </div>
+                                </div>
+                        <div class="form-group">
+                               <div class="form-check">
+                                   <input required class="form-check-input" type="checkbox" name="post2" id="post2">
+                                    <label class="form-check-label" for="post2">
+                                       * One recent passport-size photograph (Taken within six months of date of application                                                    </label>
+                                    </div>
+                                </div>
+
+                        <div class="form-group">
+                                    <div class="form-check">
+                                                        <input required class="form-check-input" type="checkbox" name="post3" id="post3">
+                                                <label class="form-check-label" for="post3">
+                                                        * Appropriate fees
+                                                    </label>
+                                    </div>
+                                </div>
+                        <div class="form-group">
+                               <div class="form-check">
+                                   <input required class="form-check-input" type="checkbox" name="post4" id="post4">
+                                    <label class="form-check-label" for="post4">
+                                       * Valid passport
+                                    </label>
+                                    </div>
+                                </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                                        <input required class="form-check-input" type="checkbox" name="post5" id="post5">
+                                                <label class="form-check-label" for="post5">
+                                            * Invitation letter from destinated country/ An undertaking that the host will ensure that the visitor complies fully with immigration laws of destined country/                                                    </label>
+                                    </div>
+                        </div>
+                        <div class="form-group">
+                               <div class="form-check">
+                                   <input required class="form-check-input" type="checkbox" name="post6" id="post6">
+                                    <label class="form-check-label" for="post6">
+                                       * Valid Ghana identification of Host (Preferably Valid passport) or Photocopies of relevant pages of passport of alien invitating businessman, showing legal immigrant status/residence permit.
+                                    </label>
+                                    </div>
+                                </div>
+
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input required class="form-check-input" type="checkbox" name="post7" id="post7">
+                                    <label class="form-check-label" for="post7">
+                                        * Correspondence with company/companies in Ghana or any other document in support of application</label></div>
+                        </div>
+                        <div class="form-group">
+                               <div class="form-check">
+                                   <input required class="form-check-input" type="checkbox" name="post8" id="post8">
+                                    <label class="form-check-label" for="post8">
+                                            * Copy of biometric passport
+                                    </label>
+                                    </div>
+                                </div>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input required class="form-check-input" type="checkbox" name="post9" id="post9">
+                                    <label class="form-check-label" for="post9">
+                                            * Valid Vaccination Certificates
+                                    </label></div>
+                        </div>
+
+
+                    </div>
+
+
+                   <div class="row">
+                        <div class="col-sm-6">
+                            <div class="text-left"><br>
+                        <button class="btn btn-dark solid blank" type="button"><a href="{% url 'visa:visa_application_form_2_edit_prev'%}">Previous</a></button>
+                    </div>
+
+                        </div>
+                         <div class="col-sm-6">
+                            <div class="text-right"><br>
+                        <button class="btn btn-dark solid blank" type="submit">Save & Proceed</button>
+                    </div>
+
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div><!-- Content row -->
+    </div><!-- Conatiner end -->
+</section>
+
+
+<footer id="footer" class="footer ">
+    <div class="footer-main">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                    <h3 class="widget-title">About Us</h3>
+                    <img loading="lazy" width="200px" class="footer-logo"
+                         src='{% static "assets/images/footer-logo.png" %}' alt="Constra">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt
+                        ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="https://facebook.com" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://instagram.com" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div><!-- Footer social end -->
+                </div><!-- Col end -->
+
+                <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                    <h3 class="widget-title">Working Hours</h3>
+                    <div class="working-hours">
+                        We work 5 days a week, excluding major holidays. Contact us if you have an emergency, with our
+                        Hotline and Contact form.
+                        <br><br> Monday - Thursday: <span class="text-right">7:30 a.m. - 4:00 p.m.</span>
+                        <br><br> Friday: <span class="text-right">7:30 a.m. - 1:00 p.m.</span>
+
+                    </div>
+                </div><!-- Col end -->
+
+                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                    <h3 class="widget-title">Services</h3>
+                    <ul class="list-arrow">
+                        <li><a href="service-single.html">Home</a></li>
+                        <li><a href="service-single.html">Visa</a></li>
+                        <li><a href="service-single.html">Other Services</a></li>
+                        <li><a href="service-single.html">About</a></li>
+                        <li><a href="service-single.html">News & Media</a></li>
+                        <li><a href="service-single.html">Contact Us</a></li>
+                    </ul>
+                </div><!-- Col end -->
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div><!-- Footer main end -->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="copyright-info">
+              <span>Copyright &copy; <script>
+                  document.write(new Date().getFullYear())
+                </script>, Designed &amp; Developed by <a href="https://secdais.net/">Secdais Ghana Limited</a></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="footer-menu text-center text-md-right">
+                        <ul class="list-unstyled">
+                            <li><a href="about.html">Home</a></li>
+                            <li><a href="team.html">Visa</a></li>
+                            <li><a href="faq.html">Other Services</a></li>
+                            <li><a href="news-left-sidebar.html">About</a></li>
+                            <li><a href="pricing.html">News & Media</a></li>
+                            <li><a href="pricing.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- Row end -->
+
+            <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                <button class="btn btn-primary" title="Back to Top">
+                    <i class="fa fa-angle-double-up"></i>
+                </button>
+            </div>
+
+        </div><!-- Container end -->
+    </div><!-- Copyright end -->
+</footer><!-- Footer end -->
+
+
+<!-- Javascript Files
+================================================== -->
+
+<!-- initialize jQuery Library -->
+<script src='{% static "assets/plugins/jQuery/jquery.min.js" %}'></script>
+<!-- Bootstrap jQuery -->
+<script src='{% static "assets/plugins/bootstrap/bootstrap.min.js" %}' defer></script>
+<!-- Slick Carousel -->
+<script src='{% static "assets/plugins/slick/slick.min.js" %}'></script>
+<script src='{% static "assets/plugins/slick/slick-animation.min.js" %}'></script>
+<!-- Color box -->
+<script src='{% static "assets/plugins/colorbox/jquery.colorbox.js" %}'></script>
+<!-- shuffle -->
+<script src='{% static "assets/plugins/shuffle/shuffle.min.js" %}' defer></script>
+
+
+<!-- Google Map API Key-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+<!-- Google Map Plugin-->
+<script src='{% static "assets/plugins/google-map/map.js" %}' defer></script>
+
+<!-- Template custom -->
+<script src='{% static "assets/js/script.js" %}'></script>
+
+
+
+<script>
+
+        $("#sponsor_as_applicant").click(function(){
+                $("#sponsor_as_applicant_div").toggle();
+          });
+
+
+        $("#not_applicable_p").click(function(){
+                $(".not_applicable_p_div").toggle();
+          });
+
+</script>
+
+</div><!-- Body inner end -->
+</body>
+
+</html>

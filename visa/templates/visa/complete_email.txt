@@ -1,0 +1,9 @@
+Dear {{ user.last_name }} {{ user.first_name }},
+
+You are seeing this email because your visa application is complete and ready to be printed.
+
+Please login into your account in our visa application portal and print your visa.
+
+
+Thank you,
+Togo Embassy
